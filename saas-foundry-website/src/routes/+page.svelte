@@ -9,11 +9,7 @@
 	import servicesImage from '$lib/assets/homepage-services.jpg';
 
 	// Data for the components
-	const headerLinks = [
-		{ href: '#services', text: 'Our Services' },
-		{ href: '#contact', text: 'Contact Us' }
-	];
-
+	
 	const heroData = {
 		imageUrl: heroImage, 
 		headline: 'Is Your Industry Lacking the Perfect Software Solution?', 
@@ -64,7 +60,6 @@
 	};
 </script>
 
-<Header navLinks={headerLinks} siteName="SaaS Foundry" /> 
 <Hero {...heroData} />
 <Services {...servicesData} />
 <Contact {...contactData} />
