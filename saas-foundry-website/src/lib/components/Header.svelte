@@ -10,7 +10,7 @@
 	];
 </script>
 
-<header class="px-4 lg:px-6 h-14 flex items-center bg-gray-100">
+<header class="px-4 lg:px-6 h-14 flex items-center bg-gray-100 sticky top-0 z-50 bg-white">
 	<div class="container mx-auto flex items-center justify-between w-full">
 		<a href="/" class="flex items-center">
 			<MountainIcon className="h-6 w-6" />
