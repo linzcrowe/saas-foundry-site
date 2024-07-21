@@ -25,7 +25,7 @@
 </script>
 
 <div class="flex min-h-screen flex-col">
-	<Header navLinks={headerLinks} siteName="SaaS Foundry" />
+	<Header navLinks={headerLinks} />
 
 	<div class="mx-auto flex-grow  py-10 pb-16">
 		<slot></slot>

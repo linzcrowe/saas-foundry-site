@@ -32,9 +32,4 @@
 </header>
 
 <style>
-	.MenuIcon {
-		display: block; /* Make it a block element for sizing */
-		width: 24px;
-		height: 24px;
-	}
 </style>
