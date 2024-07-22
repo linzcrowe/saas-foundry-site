@@ -2,16 +2,10 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import Services from '$lib/components/Services.svelte';
 	import Contact from '$lib/components/Contact.svelte';
-
 	import heroImage from '$lib/assets/homepage-hero-primary.jpg';
 	import servicesImage from '$lib/assets/homepage-services.jpg';
 
 	// Data for the components
-	const headerLinks = [
-		{ href: '#services', text: 'Our Services' },
-		{ href: '#contact', text: 'Contact Us' }
-	];
-
 	const heroData = {
 		imageUrl: heroImage,
 		headline: 'Is Your Industry Lacking the Perfect Software Solution?',
