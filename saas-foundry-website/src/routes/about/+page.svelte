@@ -1,4 +1,7 @@
 <script>
+  import aboutImage from '$lib/assets/homepage-hero-primary.jpg';
+  import teamImage from '$lib/assets/homepage-services.jpg';
+
   const aboutData = {
     sectionTitle: 'About SaaS Foundry',
     aboutDescription:
@@ -19,28 +22,50 @@
   };
 </script>
 
-<main class="flex-grow container mx-auto py-10 px-4">
-  <div class="text-center mb-8">
-    <h1 class="text-4xl font-bold text-gray-800 mb-2">{aboutData.sectionTitle}</h1>
-    <p class="text-lg text-gray-600 leading-relaxed">{aboutData.aboutDescription}</p>
-  </div>
-  
-  <div class="mb-8">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-2">{aboutData.missionTitle}</h2>
-    <p class="text-base text-gray-600 leading-relaxed">{aboutData.missionDescription}</p>
-  </div>
+<main class="flex-grow">
+  <!-- Hero Section -->
+  <section class="relative bg-gray-900 text-white">
+    <div class="absolute inset-0 z-0">
+      <img src={aboutImage} alt="About SaaS Foundry" class="w-full h-full object-cover opacity-50">
+    </div>
+    <div class="relative z-10 container mx-auto py-20 px-4 text-center">
+      <h1 class="text-5xl font-bold mb-4">{aboutData.sectionTitle}</h1>
+      <p class="text-xl max-w-3xl mx-auto">{aboutData.aboutDescription}</p>
+    </div>
+  </section>
 
-  <div class="mb-8">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-2">{aboutData.valuesTitle}</h2>
-    <ul class="list-disc list-inside text-base text-gray-600 leading-relaxed">
-      {#each aboutData.values as value}
-        <li>{value}</li>
-      {/each}
-    </ul>
-  </div>
+  <!-- Mission Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">{aboutData.missionTitle}</h2>
+      <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto text-center">{aboutData.missionDescription}</p>
+    </div>
+  </section>
 
-  <div class="mb-8">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-2">{aboutData.teamTitle}</h2>
-    <p class="text-base text-gray-600 leading-relaxed">{aboutData.teamDescription}</p>
-  </div>
+  <!-- Values Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">{aboutData.valuesTitle}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {#each aboutData.values as value}
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-lg text-gray-700">{value}</p>
+          </div>
+        {/each}
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <img src={teamImage} alt="Our Team" class="rounded-lg shadow-lg">
+      </div>
+      <div class="md:w-1/2 md:pl-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">{aboutData.teamTitle}</h2>
+        <p class="text-lg text-gray-600 leading-relaxed">{aboutData.teamDescription}</p>
+      </div>
+    </div>
+  </section>
 </main>

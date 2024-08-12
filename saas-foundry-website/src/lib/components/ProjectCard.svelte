@@ -1,34 +1,22 @@
 <script lang="ts">
+  import { Card, Button } from 'flowbite-svelte';
+  import { ArrowRightOutline } from 'flowbite-svelte-icons';
+
   export let title: string;
   export let description: string;
-  export let imageUrl: string;
+  export let imageUrl: string = 'lib/assets/project-placeholder-cloud.jpg';
   export let buttonText: string;
   export let href: string;
 </script>
 
-<div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out group hover:shadow-xl hover:-translate-y-2">
-  <a href={href} class="absolute inset-0 z-10" aria-label={title}>
-    <span class="sr-only">View {title}</span>
-  </a>
-  <img
-    src={imageUrl}
-    alt={title}
-    width={500}
-    height={400}
-    class="object-cover w-full h-64"
-  />
-  <div class="p-4 bg-background">
-    <h3 class="text-xl font-bold">{title}</h3>
-    <p class="text-sm text-muted-foreground">
-      {description}
-    </p>
-    <div class="mt-4">
-      <a
-        {href}
-        class="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-      >
-        {buttonText}
-      </a>
-    </div>
-  </div>
-</div>
+<Card img={imageUrl}>
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+    {title}
+  </h5>
+  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">
+    {description}
+  </p>
+  <Button href={href}>
+    {buttonText} <ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
+  </Button>
+</Card>
