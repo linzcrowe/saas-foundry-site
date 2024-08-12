@@ -27,7 +27,7 @@
 <div class="flex min-h-screen flex-col">
 	<Header navLinks={headerLinks} />
 
-	<div class="mx-auto flex-grow  py-10 pb-16">
+	<div class="container mx-auto flex-grow py-10 pb-16 px-4">
 		<slot></slot>
 	</div>
 
