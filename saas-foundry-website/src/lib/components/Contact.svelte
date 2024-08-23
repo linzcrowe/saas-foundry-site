@@ -21,14 +21,19 @@
 			<h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
 				{sectionTitle}
 			</h2>
-			<p
+			<!-- <p
 				class="mx-auto max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 			>
 				{contactDescription}
+			</p> -->
+			<p
+				class="mx-auto max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+			>
+			We're excited to partner with you to build the next generation of SaaS platforms and AI tools. If you're interested in exploring the possibilities, please send an email to <a href="mailto:lindsey@onebigocean.com.au" class="underline underline-offset-2">lindsey@onebigocean.com.au</a> and we'll get back to you as soon as possible.
 			</p>
 		</div>
 		<div class="mx-auto w-full max-w-sm space-y-2">
-			<form class="flex gap-2" on:submit|preventDefault={handleSubmit}>
+			<!-- <form class="flex gap-2" on:submit|preventDefault={handleSubmit}>
 				<input
 					type="email"
 					placeholder={placeholderText}
@@ -41,7 +46,7 @@
 				>
 					{buttonText}
 				</button>
-			</form>
+			</form> -->
 			<p class="text-xs text-gray-600">
 				We'll get back to you as soon as possible.
 				<a href="/privacy" class="underline underline-offset-2"> Privacy Policy </a>
