@@ -6,6 +6,12 @@ image: 'https://www.automation-consultants.com/wp-content/uploads/2019/06/jira-b
 tags: ["Jira", "AI", "Releases"]
 ---
 
-# First Insight
+# Importing Jira items for release notes
 
-Insights on Creating release notes from Jira exports
+## The start
+
+Export from Jira.
+
+## The end
+
+Upload the stories into Gen AI.

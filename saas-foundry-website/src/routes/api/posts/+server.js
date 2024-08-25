@@ -19,7 +19,7 @@ export async function GET() {
         date: data.date,
         excerpt: data.excerpt,
         image: data.image,
-        tags: data.tags
+        tags: data.tags,
       };
     });
 
