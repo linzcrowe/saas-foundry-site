@@ -9,6 +9,7 @@
 	const headerLinks = [
 		{ href: '/about/', text: 'About Us' },
 		{ href: '/#services', text: 'Our Services' },
+		{ href: '/insights', text: 'Insights' },
 		{ href: '/innovation-lab', text: 'Innovation Lab' },
 		{ href: '/#contact', text: 'Contact Us' }
 	];

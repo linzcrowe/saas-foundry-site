@@ -22,7 +22,7 @@
   };
 </script>
 
-<main class="flex-grow">
+<main class="flex-grow mt-8">
   <!-- Hero Section -->
   <section class="relative bg-gray-900 text-white">
     <div class="absolute inset-0 z-0">
