@@ -57,6 +57,9 @@
   :global(.prose li) {
     @apply mb-2;
   }
+  :global(.prose ol) {
+    @apply list-decimal;
+  }
   :global(.prose img) {
     @apply rounded-lg shadow-md my-8;
   }
