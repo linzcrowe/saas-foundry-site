@@ -19,10 +19,11 @@ In a large organization, the product development division is the engine of innov
 
 Explore the following resources to see how we plan to turn this vision into reality:
 
+- **AI-Augmented Software Development:** Platforms that assist developers in writing efficient, error-free code and automate routine tasks.
 - **AI-Driven Product Management:** Tools and strategies to support product managers and owners in making informed, strategic decisions.
 - **Intelligent Business Analysis:** AI solutions for business analysts to derive actionable insights from data, improving requirement gathering and prioritization.
 - **Enhanced Delivery and Technical Leadership:** AI-powered project management tools that help delivery and technical leads optimize resources and manage risks effectively.
-- **AI-Augmented Software Development:** Platforms that assist developers in writing efficient, error-free code and automate routine tasks.
+- **AI-Supported Architecture:** Use AI to assist in the selection of appropriate technologies, frameworks, and patterns for software architecture, draw diagrams, write documents and more.
 - **Innovative UX/UI Design:** AI tools that enhance the design process, enabling UX and UI experts to create user-centric and visually appealing interfaces.
 
 Stay tuned for more detailed guides and resources on each area.
